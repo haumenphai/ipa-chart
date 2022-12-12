@@ -1,0 +1,478 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>IPA</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        .a00 {grid-area: a00}
+        .a01 {
+            grid-area: a01
+        }
+
+        .a02 {
+            grid-area: a02
+        }
+
+        .a03 {
+            grid-area: a03
+        }
+
+        .a04 {
+            grid-area: a04
+        }
+
+        .a05 {
+            grid-area: a05
+        }
+
+        .a06 {
+            grid-area: a06
+        }
+
+        .a07 {
+            grid-area: a07
+        }
+
+        .a08 {
+            grid-area: a08
+        }
+
+        .a09 {
+            grid-area: a09
+        }
+
+        .a10 {
+            grid-area: a10
+        }
+
+        .a11 {
+            grid-area: a11
+        }
+
+        .a12 {
+            grid-area: a12
+        }
+
+        .a13 {
+            grid-area: a13
+        }
+
+        .a14 {
+            grid-area: a14
+        }
+
+        .a15 {
+            grid-area: a15
+        }
+
+        .a16 {
+            grid-area: a16
+        }
+
+        .a17 {
+            grid-area: a17
+        }
+
+        .a18 {
+            grid-area: a18
+        }
+
+        .a19 {
+            grid-area: a19
+        }
+
+        .a20 {
+            grid-area: a20
+        }
+
+        .a21 {
+            grid-area: a21
+        }
+
+        .a22 {
+            grid-area: a22
+        }
+
+        .a23 {
+            grid-area: a23
+        }
+
+        .a24 {
+            grid-area: a24
+        }
+
+        .a25 {
+            grid-area: a25
+        }
+
+        .a26 {
+            grid-area: a26
+        }
+
+        .a27 {
+            grid-area: a27
+        }
+
+        .a28 {
+            grid-area: a28
+        }
+
+        .a29 {
+            grid-area: a29
+        }
+
+        .a30 {
+            grid-area: a30
+        }
+
+        .a31 {
+            grid-area: a31
+        }
+
+        .a32 {
+            grid-area: a32
+        }
+
+        .a33 {
+            grid-area: a33
+        }
+
+        .a34 {
+            grid-area: a34
+        }
+
+        .a35 {
+            grid-area: a35
+        }
+
+        .a36 {
+            grid-area: a36
+        }
+
+        .a37 {
+            grid-area: a37
+        }
+
+        .a38 {
+            grid-area: a38
+        }
+
+        .a39 {
+            grid-area: a39
+        }
+
+        .a40 {
+            grid-area: a40
+        }
+
+        .a41 {
+            grid-area: a41
+        }
+
+        .a42 {
+            grid-area: a42
+        }
+
+        .a43 {
+            grid-area: a43
+        }
+
+        .a44 {
+            grid-area: a44
+        }
+
+        .a45 {
+            grid-area: a45
+        }
+
+        .a46 {
+            grid-area: a46
+        }
+
+        .a47 {
+            grid-area: a47
+        }
+
+        .a48 {
+            grid-area: a48
+        }
+
+        .a49 {
+            grid-area: a49
+        }
+
+        .a50 {
+            grid-area: a50
+        }
+
+        .ipa1 {
+            background-color: #d9b41e !important;
+        }
+
+        .ipa1:hover {
+            background-color: #b49517 !important;
+        }
+
+        .ipa2 {
+            background-color: #2fc20e !important;
+        }
+
+        .ipa2:hover {
+            background-color: #268f0d !important;
+        }
+
+        .ipa3 {
+            background-color: #fcabab !important;
+        }
+
+        .ipa3:hover {
+            background-color: #b07979 !important;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+                   'a00 a01 a01 a01 a01 a02 a02 a03 a04'
+                   'a05 a06 a07 a08 a09 a10 a11 a03 a04'
+                   'a05 a12 a13 a14 a15 a16 a17 a18 a04'
+                   'a05 a19 a20 a21 a22 a23 a24 a25 a04'
+                   'a26 a27 a28 a29 a30 a31 a32 a33 a34'
+                   'a26 a35 a36 a37 a38 a39 a40 a41 a42'
+                   'a26 a43 a44 a45 a46 a47 a48 a49 a50';
+            gap: 1px;
+            background-color: #868686;
+            padding: 1px;
+        }
+
+        .grid-container > div {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 5px 0;
+        }
+        .color1 {
+            background-color: #bfccff !important;
+        }
+        .color2 {
+            background-color: #ffe8c6 !important;
+        }
+        .ipa_button {
+            cursor: pointer;
+        }
+        .ipa_char {
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .ipa_example {
+            font-size: 14px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12 col-lg-3"></div>
+        <div class="col-12 col-lg-6">
+            <div class="mt-5">
+                Hello
+            </div>
+            <div class="grid-container" style="min-width: 550px">
+                <div class="a00"></div>
+                <div class="a01 color1">Nguyên âm đơn</div>
+                <div class="a02 color1">Nguyên âm đôi</div>
+                <div class="a03 color2">IPA</div>
+                <div class="a04 color2">Chart</div>
+                <div class="a05 pl-2 color1" style="writing-mode: vertical-lr">Nguyên âm</div>
+                <div class="a06 ipa1 ipa_button">
+                    <span class="ipa_char">i:</span> <br>
+                    <span class="ipa_example">sh<u>ee</u>p</span>
+                </div>
+                <div class="a07 ipa1 ipa_button">
+                    <span class="ipa_char">ɪ</span> <br>
+                    <span class="ipa_example">sh<u>i</u>p</span>
+                </div>
+                <div class="a08 ipa1 ipa_button">
+                    <span class="ipa_char">ʊ</span> <br>
+                    <span class="ipa_example">g<u>oo</u>d</span>
+                </div>
+                <div class="a09 ipa1 ipa_button">
+                    <span class="ipa_char">u:</span> <br>
+                    <span class="ipa_example">sh<u>oo</u>t</span>
+                </div>
+                <div class="a10 ipa2 ipa_button">
+                    <span class="ipa_char">ɪə</span> <br>
+                    <span class="ipa_example">h<u>ere</u></span>
+                </div>
+                <div class="a11 ipa2 ipa_button">
+                    <span class="ipa_char">eɪ</span> <br>
+                    <span class="ipa_example">w<u>ai</u>t</span>
+                </div>
+                <div class="a12 ipa1 ipa_button">
+                    <span class="ipa_char">e</span> <br>
+                    <span class="ipa_example">b<u>e</u>d</span>
+                </div>
+                <div class="a13 ipa1 ipa_button">
+                    <span class="ipa_char">ə</span> <br>
+                    <span class="ipa_example">teach<u>er</u></span>
+                </div>
+                <div class="a14 ipa1 ipa_button">
+                    <span class="ipa_char">ɜ:</span> <br>
+                    <span class="ipa_example">b<u>ir</u>d</span>
+                </div>
+                <div class="a15 ipa1 ipa_button">
+                    <span class="ipa_char">ɔ:</span> <br>
+                    <span class="ipa_example">d<u>oo</u>r</span>
+                </div>
+                <div class="a16 ipa2 ipa_button">
+                    <span class="ipa_char">ʊə</span> <br>
+                    <span class="ipa_example">t<u>ou</u>rist</span>
+                </div>
+                <div class="a17 ipa2 ipa_button">
+                    <span class="ipa_char">ɔɪ</span> <br>
+                    <span class="ipa_example">b<u>o</u>y</span>
+                </div>
+                <div class="a18 ipa2 ipa_button">
+                    <span class="ipa_char">əʊ</span> <br>
+                    <span class="ipa_example">sh<u>ow</u></span>
+                </div>
+                <div class="a19 ipa1 ipa_button">
+                    <span class="ipa_char">æ</span> <br>
+                    <span class="ipa_example">c<u>a</u>t</span>
+                </div>
+                <div class="a20 ipa1 ipa_button">
+                    <span class="ipa_char">ʌ</span> <br>
+                    <span class="ipa_example"><u>u</u>p</span>
+                </div>
+                <div class="a21 ipa1 ipa_button">
+                    <span class="ipa_char">ɑ:</span> <br>
+                    <span class="ipa_example">f<u>ar</u></span>
+                </div>
+                <div class="a22 ipa1 ipa_button">
+                    <span class="ipa_char">ɒ</span> <br>
+                    <span class="ipa_example"><u>o</u>n</span>
+                </div>
+                <div class="a23 ipa2 ipa_button">
+                    <span class="ipa_char">eə</span> <br>
+                    <span class="ipa_example">h<u>air</u></span>
+                </div>
+                <div class="a24 ipa2 ipa_button">
+                    <span class="ipa_char">aɪ</span> <br>
+                    <span class="ipa_example">m<u>y</u></span>
+                </div>
+                <div class="a25 ipa2 ipa_button">
+                    <span class="ipa_char">əʊ</span> <br>
+                    <span class="ipa_example">c<u>ow</u></span>
+                </div>
+                <div class="a26 pl-2 color1" style="writing-mode: vertical-lr">Phụ âm</div>
+                <div class="a27 ipa3 ipa_button">
+                    <span class="ipa_char">p</span> <br>
+                    <span class="ipa_example"><u>p</u>ea</span>
+                </div>
+                <div class="a28 ipa3 ipa_button">
+                    <span class="ipa_char">b</span> <br>
+                    <span class="ipa_example"><u>b</u>oat</span>
+                </div>
+                <div class="a29 ipa3 ipa_button">
+                    <span class="ipa_char">t</span> <br>
+                    <span class="ipa_example"><u>t</u>ea</span>
+                </div>
+                <div class="a30 ipa3 ipa_button">
+                    <span class="ipa_char">d</span> <br>
+                    <span class="ipa_example"><u>d</u>og</span>
+                </div>
+                <div class="a31 ipa3 ipa_button">
+                    <span class="ipa_char">t∫</span> <br>
+                    <span class="ipa_example"><u>ch</u>eese</span>
+                </div>
+                <div class="a32 ipa3 ipa_button">
+                    <span class="ipa_char">dʒ</span> <br>
+                    <span class="ipa_example"><u>J</u>une</span>
+                </div>
+                <div class="a33 ipa3 ipa_button">
+                    <span class="ipa_char">k</span> <br>
+                    <span class="ipa_example"><u>c</u>ar</span>
+                </div>
+                <div class="a34 ipa3 ipa_button">
+                    <span class="ipa_char">g</span> <br>
+                    <span class="ipa_example"><u>g</u>o</span>
+                </div>
+                <div class="a35 ipa3 ipa_button">
+                    <span class="ipa_char">f</span> <br>
+                    <span class="ipa_example"><u>f</u>ly</span>
+                </div>
+                <div class="a36 ipa3 ipa_button">
+                    <span class="ipa_char">v</span> <br>
+                    <span class="ipa_example"><u>v</u>ideo</span>
+                </div>
+                <div class="a37 ipa3 ipa_button">
+                    <span class="ipa_char">ð</span> <br>
+                    <span class="ipa_example"><u>th</u>ink</span>
+                </div>
+                <div class="a38 ipa3 ipa_button">
+                    <span class="ipa_char">θ</span> <br>
+                    <span class="ipa_example"><u>th</u>is</span>
+                </div>
+                <div class="a39 ipa3 ipa_button">
+                    <span class="ipa_char">s</span> <br>
+                    <span class="ipa_example"><u>s</u>ee</span>
+                </div>
+                <div class="a40 ipa3 ipa_button">
+                    <span class="ipa_char">z</span> <br>
+                    <span class="ipa_example"><u>z</u>oo</span>
+                </div>
+                <div class="a41 ipa3 ipa_button">
+                    <span class="ipa_char">∫</span> <br>
+                    <span class="ipa_example"><u>sh</u>all</span>
+                </div>
+                <div class="a42 ipa3 ipa_button">
+                    <span class="ipa_char">ʒ</span> <br>
+                    <span class="ipa_example">televi<u>s</u>ion</span>
+                </div>
+                <div class="a43 ipa3 ipa_button">
+                    <span class="ipa_char">m</span> <br>
+                    <span class="ipa_example"><u>m</u>an</span>
+                </div>
+                <div class="a44 ipa3 ipa_button">
+                    <span class="ipa_char">n</span> <br>
+                    <span class="ipa_example"><u>n</u>ow</span>
+                </div>
+                <div class="a45 ipa3 ipa_button">
+                    <span class="ipa_char">ŋ</span> <br>
+                    <span class="ipa_example">s<u>ing</u></span>
+                </div>
+                <div class="a46 ipa3 ipa_button">
+                    <span class="ipa_char">h</span> <br>
+                    <span class="ipa_example"><u>h</u>at</span>
+                </div>
+                <div class="a47 ipa3 ipa_button">
+                    <span class="ipa_char">l</span> <br>
+                    <span class="ipa_example"><u>l</u>ove</span>
+                </div>
+                <div class="a48 ipa3 ipa_button">
+                    <span class="ipa_char">r</span> <br>
+                    <span class="ipa_example"><u>r</u>ed</span>
+                </div>
+                <div class="a49 ipa3 ipa_button">
+                    <span class="ipa_char">w</span> <br>
+                    <span class="ipa_example"><u>w</u>et</span>
+                </div>
+                <div class="a50 ipa3 ipa_button">
+                    <span class="ipa_char">j</span> <br>
+                    <span class="ipa_example"><u>y</u>es</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-lg-3"></div>
+    </div>
+</div>
+</body>
+</html>

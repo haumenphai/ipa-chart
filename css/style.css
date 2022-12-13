@@ -1,0 +1,280 @@
+.a00 {
+    grid-area: a00
+}
+
+.a01 {
+    grid-area: a01
+}
+
+.a02 {
+    grid-area: a02
+}
+
+.a03 {
+    grid-area: a03
+}
+
+.a04 {
+    grid-area: a04
+}
+
+.a05 {
+    grid-area: a05
+}
+
+.a06 {
+    grid-area: a06
+}
+
+.a07 {
+    grid-area: a07
+}
+
+.a08 {
+    grid-area: a08
+}
+
+.a09 {
+    grid-area: a09
+}
+
+.a10 {
+    grid-area: a10
+}
+
+.a11 {
+    grid-area: a11
+}
+
+.a12 {
+    grid-area: a12
+}
+
+.a13 {
+    grid-area: a13
+}
+
+.a14 {
+    grid-area: a14
+}
+
+.a15 {
+    grid-area: a15
+}
+
+.a16 {
+    grid-area: a16
+}
+
+.a17 {
+    grid-area: a17
+}
+
+.a18 {
+    grid-area: a18
+}
+
+.a19 {
+    grid-area: a19
+}
+
+.a20 {
+    grid-area: a20
+}
+
+.a21 {
+    grid-area: a21
+}
+
+.a22 {
+    grid-area: a22
+}
+
+.a23 {
+    grid-area: a23
+}
+
+.a24 {
+    grid-area: a24
+}
+
+.a25 {
+    grid-area: a25
+}
+
+.a26 {
+    grid-area: a26
+}
+
+.a27 {
+    grid-area: a27
+}
+
+.a28 {
+    grid-area: a28
+}
+
+.a29 {
+    grid-area: a29
+}
+
+.a30 {
+    grid-area: a30
+}
+
+.a31 {
+    grid-area: a31
+}
+
+.a32 {
+    grid-area: a32
+}
+
+.a33 {
+    grid-area: a33
+}
+
+.a34 {
+    grid-area: a34
+}
+
+.a35 {
+    grid-area: a35
+}
+
+.a36 {
+    grid-area: a36
+}
+
+.a37 {
+    grid-area: a37
+}
+
+.a38 {
+    grid-area: a38
+}
+
+.a39 {
+    grid-area: a39
+}
+
+.a40 {
+    grid-area: a40
+}
+
+.a41 {
+    grid-area: a41
+}
+
+.a42 {
+    grid-area: a42
+}
+
+.a43 {
+    grid-area: a43
+}
+
+.a44 {
+    grid-area: a44
+}
+
+.a45 {
+    grid-area: a45
+}
+
+.a46 {
+    grid-area: a46
+}
+
+.a47 {
+    grid-area: a47
+}
+
+.a48 {
+    grid-area: a48
+}
+
+.a49 {
+    grid-area: a49
+}
+
+.a50 {
+    grid-area: a50
+}
+
+.ipa1 {
+    background-color: #d9b41e !important;
+}
+
+.ipa1:hover {
+    background-color: #b49517 !important;
+}
+
+.ipa2 {
+    background-color: #2fc20e !important;
+}
+
+.ipa2:hover {
+    background-color: #268f0d !important;
+}
+
+.ipa3 {
+    background-color: #fcabab !important;
+}
+
+.ipa3:hover {
+    background-color: #b07979 !important;
+}
+
+.grid-container {
+    border-radius: 2px;
+    display: grid;
+    grid-template-areas:
+                   'a00 a01 a01 a01 a01 a02 a02 a03 a04'
+                   'a05 a06 a07 a08 a09 a10 a11 a03 a04'
+                   'a05 a12 a13 a14 a15 a16 a17 a18 a04'
+                   'a05 a19 a20 a21 a22 a23 a24 a25 a04'
+                   'a26 a27 a28 a29 a30 a31 a32 a33 a34'
+                   'a26 a35 a36 a37 a38 a39 a40 a41 a42'
+                   'a26 a43 a44 a45 a46 a47 a48 a49 a50';
+    gap: 1px;
+    background-color: #868686;
+    padding: 1px;
+}
+
+.grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 5px 0;
+}
+
+.color1 {
+    background-color: #bfccff !important;
+}
+
+.color2 {
+    background-color: #ffe8c6 !important;
+}
+
+.ipa_button {
+    cursor: pointer;
+}
+
+.ipa_char {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.ipa_example {
+    font-size: 14px;
+}
+
+#ipa_description {
+    height: 50vh;
+    overflow-y: scroll;
+}
+
+.ipa_detail_char {
+    font-size: 30px;
+    font-weight: bold;
+}

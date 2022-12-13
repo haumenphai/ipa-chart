@@ -3,469 +3,469 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+          content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>IPA</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <style>
-        .a00 {grid-area: a00}
-        .a01 {
-            grid-area: a01
-        }
-
-        .a02 {
-            grid-area: a02
-        }
-
-        .a03 {
-            grid-area: a03
-        }
-
-        .a04 {
-            grid-area: a04
-        }
-
-        .a05 {
-            grid-area: a05
-        }
-
-        .a06 {
-            grid-area: a06
-        }
-
-        .a07 {
-            grid-area: a07
-        }
-
-        .a08 {
-            grid-area: a08
-        }
-
-        .a09 {
-            grid-area: a09
-        }
-
-        .a10 {
-            grid-area: a10
-        }
-
-        .a11 {
-            grid-area: a11
-        }
-
-        .a12 {
-            grid-area: a12
-        }
-
-        .a13 {
-            grid-area: a13
-        }
-
-        .a14 {
-            grid-area: a14
-        }
-
-        .a15 {
-            grid-area: a15
-        }
-
-        .a16 {
-            grid-area: a16
-        }
-
-        .a17 {
-            grid-area: a17
-        }
-
-        .a18 {
-            grid-area: a18
-        }
-
-        .a19 {
-            grid-area: a19
-        }
-
-        .a20 {
-            grid-area: a20
-        }
-
-        .a21 {
-            grid-area: a21
-        }
-
-        .a22 {
-            grid-area: a22
-        }
-
-        .a23 {
-            grid-area: a23
-        }
-
-        .a24 {
-            grid-area: a24
-        }
-
-        .a25 {
-            grid-area: a25
-        }
-
-        .a26 {
-            grid-area: a26
-        }
-
-        .a27 {
-            grid-area: a27
-        }
-
-        .a28 {
-            grid-area: a28
-        }
-
-        .a29 {
-            grid-area: a29
-        }
-
-        .a30 {
-            grid-area: a30
-        }
-
-        .a31 {
-            grid-area: a31
-        }
-
-        .a32 {
-            grid-area: a32
-        }
-
-        .a33 {
-            grid-area: a33
-        }
-
-        .a34 {
-            grid-area: a34
-        }
-
-        .a35 {
-            grid-area: a35
-        }
-
-        .a36 {
-            grid-area: a36
-        }
-
-        .a37 {
-            grid-area: a37
-        }
-
-        .a38 {
-            grid-area: a38
-        }
-
-        .a39 {
-            grid-area: a39
-        }
-
-        .a40 {
-            grid-area: a40
-        }
-
-        .a41 {
-            grid-area: a41
-        }
-
-        .a42 {
-            grid-area: a42
-        }
-
-        .a43 {
-            grid-area: a43
-        }
-
-        .a44 {
-            grid-area: a44
-        }
-
-        .a45 {
-            grid-area: a45
-        }
-
-        .a46 {
-            grid-area: a46
-        }
-
-        .a47 {
-            grid-area: a47
-        }
-
-        .a48 {
-            grid-area: a48
-        }
-
-        .a49 {
-            grid-area: a49
-        }
-
-        .a50 {
-            grid-area: a50
-        }
-
-        .ipa1 {
-            background-color: #d9b41e !important;
-        }
-
-        .ipa1:hover {
-            background-color: #b49517 !important;
-        }
-
-        .ipa2 {
-            background-color: #2fc20e !important;
-        }
-
-        .ipa2:hover {
-            background-color: #268f0d !important;
-        }
-
-        .ipa3 {
-            background-color: #fcabab !important;
-        }
-
-        .ipa3:hover {
-            background-color: #b07979 !important;
-        }
-
-        .grid-container {
-            display: grid;
-            grid-template-areas:
-                   'a00 a01 a01 a01 a01 a02 a02 a03 a04'
-                   'a05 a06 a07 a08 a09 a10 a11 a03 a04'
-                   'a05 a12 a13 a14 a15 a16 a17 a18 a04'
-                   'a05 a19 a20 a21 a22 a23 a24 a25 a04'
-                   'a26 a27 a28 a29 a30 a31 a32 a33 a34'
-                   'a26 a35 a36 a37 a38 a39 a40 a41 a42'
-                   'a26 a43 a44 a45 a46 a47 a48 a49 a50';
-            gap: 1px;
-            background-color: #868686;
-            padding: 1px;
-        }
-
-        .grid-container > div {
-            background-color: rgba(255, 255, 255, 0.8);
-            text-align: center;
-            padding: 5px 0;
-        }
-        .color1 {
-            background-color: #bfccff !important;
-        }
-        .color2 {
-            background-color: #ffe8c6 !important;
-        }
-        .ipa_button {
-            cursor: pointer;
-        }
-        .ipa_char {
-            font-weight: bold;
-            font-size: 18px;
-        }
-        .ipa_example {
-            font-size: 14px;
-        }
-
-
-
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body style="background-color: #f7e6ff">
+
+<!-- IPA Description Data -->
+<div style="display: none">
+    <div class="ipa_description_detail" data-ipa-id="sheep">
+        <p class="text-center">
+            <span class="ipa_detail_char">i:</span>
+        </p>
+        <p>
+            Cách phát âm: lưỡi đưa hướng lên trên và ra phía trước,khoảng cách môi trên và dưới hẹp, mở rộng miệng sang
+            2 bên.
+            Khi phát âm âm này, miệng hơi bè một chút, giống như đang mỉm cười vậy.
+        </p>
+        <div class="text-center">
+            <img src="images/sheep.gif" alt="">
+        </div>
+    </div>
+    <div class="ipa_description_detail" data-ipa-id="ship">
+        <p class="text-center">
+            <span class="ipa_detail_char">ɪ</span>
+        </p>
+        <p>
+            Cách phát âm: lưỡi đưa hướng lên trên và ra phía trước, khoảng cách môi trên và dưới hẹp, mở rộng miệng sang
+            2 bên
+        </p>
+        <div class="text-center">
+            <img src="images/ship.gif" alt="">
+        </div>
+    </div>
+    <div class="ipa_description_detail" data-ipa-id="bed">
+        <p class="text-center">
+            <span class="ipa_detail_char">e</span>
+        </p>
+        <p>
+            Cách phát âm: Đây là nguyên âm ngắn nên cách phát âm các em cần chú ý phát âm như sau gần giống như phát âm
+            /ɪ/, nhưng khoảng cách môi trên-dưới mở rộng hơn, vị trí lưỡi thấp hơn.
+        <div class="text-center">
+            <img src="images/bed.png" alt="">
+        </div>
+        <br>
+        -Ví dụ:
+        <ul>
+            <li>hen /hen/: gà mái</li>
+            <li>men /men/: đàn ông</li>
+            <li>ten /ten/: số mười</li>
+            <li>head /hed/: cái đầu</li>
+            <li>pen /pen/: cái bút</li>
+            <li>ben /ben/: đỉnh núi</li>
+            <li>peg /peg/: cái chốt</li>
+            <li>bell /bel/: chuông</li>
+            <li>cheque /tʃek/: séc</li>
+            <li>hell /hel/: địa ngục</li>
+            <li>gel /dʒel/" chất gelc</li>
+            <li>dead /ded/: chết</li>
+            <li>pedal /'pedəl/: bàn đạp</li>
+            <li>shell /ʃel/: vỏ</li>
+        </ul>
+        </p>
+    </div>
+    <div class="ipa_description_detail" data-ipa-id="good">
+        <p class="text-center">
+            <span class="ipa_detail_char">ʊ</span>
+        </p>
+        <p>
+            -Khi phát âm nguyên âm ngắn này thì lưỡi di chuyển về phía sau, môi mở và hẹp hơn.
+            <div class="text-center">
+                <img src="images/good.png" alt="">
+            </div>
+            <br>
+            -Ví dụ:
+            <ul>
+                <li>put /pʊt/: đặt, để</li>
+                <li>cook /kʊk/: nấu thức ăn</li>
+                <li>good /gʊd/: tốt</li>
+                <li>look /lʊk/: nhìn</li>
+                <li>rook /rʊk/: con quạ</li>
+                <li>book /bʊk/: sách</li>
+                <li>would /wʊd/: thời quá khứ của will</li>
+                <li>could /kʊd/: có thể (quá khứ của can)</li>
+                <li>woman /ˈwʊmən/: phụ nữ</li>
+                <li>wolf /wʊlf/: chó sói</li>
+                <li>full /fʊl/: đầy đủ</li>
+            </ul>
+        </p>
+    </div>
+    <div class="ipa_description_detail" data-ipa-id="shoot">
+        <p class="text-center">
+            <span class="ipa_detail_char">uː</span>
+        </p>
+        <p>
+            -Khi phát âm nguyên âm này, môi mở tròn, nhỏ. Lưỡi đưa về phía sau nhiều hơn so với khi phát âm /ʊ/.
+        <div class="text-center">
+            <img src="images/shoot.png" alt="">
+        </div>
+        <br>
+        -Ví dụ:
+        <ul>
+            <li>you /juː/: bạn</li>
+            <li>too /tuː/: cũng...</li>
+            <li>shoe /ʃuː/: giầy</li>
+            <li>blue /bluː/: màu xanh</li>
+            <li>Luke /luːk/: (tên người)</li>
+            <li>fool /fuːl/: ngớ ngẩn</li>
+            <li>pool /puːl/: ao, bể bơi</li>
+            <li>food /fuːd/: thức ăn</li>
+            <li>glue /gluː/: keo dính</li>
+            <li>choose /tʃuːz/: chọn</li>
+            <li>hoop /huːp/: cái vòng</li>
+            <li>boot /buːt/: ủng, giày ống</li>
+            <li>coot /kuːt/: chim sâm cầm</li>
+            <li>two /tuː/: số hai</li>
+            <li>who /huː/: ai (chỉ người)</li>
+            <li>whose /huːz/: của ai (sở hữu)</li>
+            <li>true /truː/: đúng</li>
+        </ul>
+        </p>
+    </div>
+    <div class="ipa_description_detail" data-ipa-id="teacher">
+        <p class="text-center">
+            <span class="ipa_detail_char">ə</span>
+        </p>
+        <p>
+            Âm ơ ngắn, phát như âm ơ tiếng Việt nhưng ngắn và nhẹ hơn.
+            Môi hơi mở rộng, lưỡi thả lỏng
+            <div class="text-center">
+                <img src="images/teacher.gif" alt="">
+            </div>
+            <br>
+            -Ví dụ:
+            <ul>
+                <li>banana /bəˈnɑːnə/</li>
+                <li>doctor /ˈdɒktə(r)/</li>
+            </ul>
+        </p>
+    </div>
+    <div class="ipa_description_detail" data-ipa-id="bird">
+        <p class="text-center">
+            <span class="ipa_detail_char">ɜ:</span>
+        </p>
+        <p>
+            Âm này đọc là âm ơ nhưng cong lưỡi. Bạn phát âm / ə / rồi cong lưỡi lên, phát âm từ trong khoang miệng
+            Môi hơi mở rộng, lưỡi cong lên, lưỡi chạm vào vòm miệng khi kết thúc âm
+            <div class="text-center">
+                <img src="images/bird.gif" alt="">
+            </div>
+            <br>
+            -Ví dụ:
+            <ul>
+                <li>burn /bɜːn/</li>
+                <li>birthday /ˈbɜːθdeɪ/</li>
+            </ul>
+        </p>
+    </div>
+    <div class="ipa_description_detail" data-ipa-id="door">
+        <p class="text-center">
+            <span class="ipa_detail_char">ɔ:</span>
+        </p>
+        <p>
+            Phát âm như âm o tiếng Việt nhưng rồi cong lưỡi lên, không phát âm từ khoang miệng.
+            Tròn môi, Lưỡi cong lên chạm vào vòm miệng khi kết thúc âm
+            <div class="text-center">
+                <img src="images/door.gif" alt="">
+            </div>
+            <br>
+            -Ví dụ:
+            <ul>
+                <li>ball /bɔːl/,</li>
+                <li>law /lɔː/</li>
+            </ul>
+        </p>
+    </div>
+    <div class="ipa_description_detail" data-ipa-id="cat">
+        <p class="text-center">
+            <span class="ipa_detail_char">æ</span>
+        </p>
+        <p>
+            Bước 1: Mở miệng rộng (chiều ngang) và to (chiều dọc) <br>
+            Bước 2: Hạ lưỡi và quai hàm xuống thấp hẳn <br>
+            Bước 3: Phát âm ngắn khi đọc
+            <div class="text-center">
+                <img src="images/cat.jpg" alt="">
+            </div>
+            <br>
+            -Ví dụ:
+            <ul>
+                <li>trap /træp/</li>
+                <li>bad /bæd/</li>
+            </ul>
+        </p>
+    </div>
+    <div class="ipa_description_detail" data-ipa-id="up">
+        <p class="text-center">
+            <span class="ipa_detail_char">ʌ</span>
+        </p>
+        <p>
+            Bước 1: Nâng nhẹ phần thân lưỡi <br>
+            Bước 2: Lưỡi thả lỏng, hạ đầu lưỡi xuống vị trí sau răng cửa hàm dưới <br>
+            Bước 3:  Nhẹ nhàng phát âm /ʌ/. Âm này khá giống với “ă” trong bảng chữ cái Tiếng Việt. <br>
+            <div class="text-center">
+                <img src="images/up.png" alt="">
+            </div>
+            <br>
+            -Ví dụ:
+            <ul>
+                <li>come / kʌm / </li>
+                <li>some / sʌm / </li>
+                <li>love / lʌv / </li>
+                <li>monkey / ˈmʌŋki /</li>
+                <li>mother / ˈmʌðə /</li>
+            </ul>
+        </p>
+    </div>
+    <div class="ipa_description_detail" data-ipa-id="far">
+        <p class="text-center">
+            <span class="ipa_detail_char">ɑ:</span>
+        </p>
+        <p>
+            Bước 1: Mở rộng miệng như đang ngáp <br>
+            Bước 2: Lưỡi thả lỏng, hạ thấp trong khoang miệng, đầu lưỡi đặt tại phía sau của răng cửa ở hàm dưới <br>
+            Bước 3: Nhẹ nhàng phát âm /a:/. Chú ý ngân dài hơn chữ “a” trong bảng chữ cái Tiếng Việt. <br>
+            <div class="text-center">
+                <img src="images/far.jpg" alt="">
+            </div>
+            <br>
+            -Ví dụ:
+            <ul>
+                <li>car (n) – /kɑːr/: xe hơi </li>
+                <li>charge (v) – /tʃɑːrdʒ/: trả phí</li>
+                <li>start (v)- /stɑːrt/: bắt đầu</li>
+                <li>carp (n) – /ka:rp/: cá chép</li>
+                <li>bar (n) – /ba:r/: then cửa, quầy bar</li>
+            </ul>
+        </p>
+    </div>
+    <div class="ipa_description_detail" data-ipa-id="on">
+        <p class="text-center">
+            <span class="ipa_detail_char">ɒ</span>
+        </p>
+        <p>
+            Âm o ngắn, tương tự âm o tiếng Việt nhưng phát âm ngắn hơn. Môi hơi tròn, lưỡi hạ thấp <br><br>
+
+            Nguyên âm ngắn /ɒ/ này ở giữa âm nửa mở và âm mở đối với vị trí của lưỡi, phát âm tròn môi, nhả hàm xuống, miệng thư giãn.
+            Tương tự i ngắn, âm /ɒ/ khi phát âm, âm ngắn hơn so với o thông thường trong tiếng Việt,
+            bạn cảm giác như nuốt một nửa hơi trong khi đang phát âm o thông thường, lưỡi hơi rụt một chút.
+            Tuy nhiên, âm này còn tuỳ vào vùng miền, một số vùng ở Anh hay ở Mỹ học nói a: (ah) nghe âm khá tương tự, có một chút khác biệt mà thôi.
+            <div class="text-center">
+                <img src="images/on.gif" alt="">
+            </div>
+            <br>
+            -Ví dụ:
+            <ul>
+                <li>Dog /dɒg/</li>
+                <li>Box /bɒks/</li>
+                <li>Job /dʒɒb/</li>
+                <li>Cost /kɒst/</li>
+                <li>Clock /klɒk/</li>
+                <li>Hobby /'hɒbi/</li>
+                <li>Coffee /'kɒfi/</li>
+                <li>Sorry /'sɒri/</li>
+                <li>Doctor/ˈdɒktə(r)/</li>
+                <li>Impossible /ɪmˈpɒsəbl/</li>
+            </ul>
+        </p>
+    </div>
+</div>
+
 <div class="container-fluid">
     <div class="row">
         <div class="col-12 col-lg-3"></div>
         <div class="col-12 col-lg-6">
-            <div class="mt-5">
-                Hello
+            <div class="mt-2" id="ipa_description">
+
             </div>
-            <div class="grid-container" style="min-width: 550px">
+            <div class="grid-container mt-3" style="min-width: 100vh">
                 <div class="a00"></div>
                 <div class="a01 color1">Nguyên âm đơn</div>
                 <div class="a02 color1">Nguyên âm đôi</div>
                 <div class="a03 color2">IPA</div>
                 <div class="a04 color2">Chart</div>
                 <div class="a05 pl-2 color1" style="writing-mode: vertical-lr">Nguyên âm</div>
-                <div class="a06 ipa1 ipa_button">
+                <div class="a06 ipa1 ipa_button" data-ipa-id="sheep">
                     <span class="ipa_char">i:</span> <br>
                     <span class="ipa_example">sh<u>ee</u>p</span>
                 </div>
-                <div class="a07 ipa1 ipa_button">
+                <div class="a07 ipa1 ipa_button" data-ipa-id="ship">
                     <span class="ipa_char">ɪ</span> <br>
                     <span class="ipa_example">sh<u>i</u>p</span>
                 </div>
-                <div class="a08 ipa1 ipa_button">
+                <div class="a08 ipa1 ipa_button" data-ipa-id="good">
                     <span class="ipa_char">ʊ</span> <br>
                     <span class="ipa_example">g<u>oo</u>d</span>
                 </div>
-                <div class="a09 ipa1 ipa_button">
+                <div class="a09 ipa1 ipa_button" data-ipa-id="shoot">
                     <span class="ipa_char">u:</span> <br>
                     <span class="ipa_example">sh<u>oo</u>t</span>
                 </div>
-                <div class="a10 ipa2 ipa_button">
+                <div class="a10 ipa2 ipa_button" data-ipa-id="here">
                     <span class="ipa_char">ɪə</span> <br>
                     <span class="ipa_example">h<u>ere</u></span>
                 </div>
-                <div class="a11 ipa2 ipa_button">
+                <div class="a11 ipa2 ipa_button" data-ipa-id="wait">
                     <span class="ipa_char">eɪ</span> <br>
                     <span class="ipa_example">w<u>ai</u>t</span>
                 </div>
-                <div class="a12 ipa1 ipa_button">
+                <div class="a12 ipa1 ipa_button" data-ipa-id="bed">
                     <span class="ipa_char">e</span> <br>
                     <span class="ipa_example">b<u>e</u>d</span>
                 </div>
-                <div class="a13 ipa1 ipa_button">
+                <div class="a13 ipa1 ipa_button" data-ipa-id="teacher">
                     <span class="ipa_char">ə</span> <br>
                     <span class="ipa_example">teach<u>er</u></span>
                 </div>
-                <div class="a14 ipa1 ipa_button">
+                <div class="a14 ipa1 ipa_button" data-ipa-id="bird">
                     <span class="ipa_char">ɜ:</span> <br>
                     <span class="ipa_example">b<u>ir</u>d</span>
                 </div>
-                <div class="a15 ipa1 ipa_button">
+                <div class="a15 ipa1 ipa_button" data-ipa-id="door">
                     <span class="ipa_char">ɔ:</span> <br>
                     <span class="ipa_example">d<u>oo</u>r</span>
                 </div>
-                <div class="a16 ipa2 ipa_button">
+                <div class="a16 ipa2 ipa_button" data-ipa-id="tourist">
                     <span class="ipa_char">ʊə</span> <br>
                     <span class="ipa_example">t<u>ou</u>rist</span>
                 </div>
-                <div class="a17 ipa2 ipa_button">
+                <div class="a17 ipa2 ipa_button" data-ipa-id="boy">
                     <span class="ipa_char">ɔɪ</span> <br>
                     <span class="ipa_example">b<u>o</u>y</span>
                 </div>
-                <div class="a18 ipa2 ipa_button">
+                <div class="a18 ipa2 ipa_button" data-ipa-id="show">
                     <span class="ipa_char">əʊ</span> <br>
                     <span class="ipa_example">sh<u>ow</u></span>
                 </div>
-                <div class="a19 ipa1 ipa_button">
+                <div class="a19 ipa1 ipa_button" data-ipa-id="cat">
                     <span class="ipa_char">æ</span> <br>
                     <span class="ipa_example">c<u>a</u>t</span>
                 </div>
-                <div class="a20 ipa1 ipa_button">
+                <div class="a20 ipa1 ipa_button" data-ipa-id="up">
                     <span class="ipa_char">ʌ</span> <br>
                     <span class="ipa_example"><u>u</u>p</span>
                 </div>
-                <div class="a21 ipa1 ipa_button">
+                <div class="a21 ipa1 ipa_button" data-ipa-id="far">
                     <span class="ipa_char">ɑ:</span> <br>
                     <span class="ipa_example">f<u>ar</u></span>
                 </div>
-                <div class="a22 ipa1 ipa_button">
+                <div class="a22 ipa1 ipa_button" data-ipa-id="on">
                     <span class="ipa_char">ɒ</span> <br>
                     <span class="ipa_example"><u>o</u>n</span>
                 </div>
-                <div class="a23 ipa2 ipa_button">
+                <div class="a23 ipa2 ipa_button" data-ipa-id="hair">
                     <span class="ipa_char">eə</span> <br>
                     <span class="ipa_example">h<u>air</u></span>
                 </div>
-                <div class="a24 ipa2 ipa_button">
+                <div class="a24 ipa2 ipa_button" data-ipa-id="my">
                     <span class="ipa_char">aɪ</span> <br>
                     <span class="ipa_example">m<u>y</u></span>
                 </div>
-                <div class="a25 ipa2 ipa_button">
+                <div class="a25 ipa2 ipa_button" data-ipa-id="cow">
                     <span class="ipa_char">əʊ</span> <br>
                     <span class="ipa_example">c<u>ow</u></span>
                 </div>
                 <div class="a26 pl-2 color1" style="writing-mode: vertical-lr">Phụ âm</div>
-                <div class="a27 ipa3 ipa_button">
+                <div class="a27 ipa3 ipa_button" data-ipa-id="pea">
                     <span class="ipa_char">p</span> <br>
                     <span class="ipa_example"><u>p</u>ea</span>
                 </div>
-                <div class="a28 ipa3 ipa_button">
+                <div class="a28 ipa3 ipa_button" data-ipa-id="boat">
                     <span class="ipa_char">b</span> <br>
                     <span class="ipa_example"><u>b</u>oat</span>
                 </div>
-                <div class="a29 ipa3 ipa_button">
+                <div class="a29 ipa3 ipa_button" data-ipa-id="tea">
                     <span class="ipa_char">t</span> <br>
                     <span class="ipa_example"><u>t</u>ea</span>
                 </div>
-                <div class="a30 ipa3 ipa_button">
+                <div class="a30 ipa3 ipa_button" data-ipa-id="dog">
                     <span class="ipa_char">d</span> <br>
                     <span class="ipa_example"><u>d</u>og</span>
                 </div>
-                <div class="a31 ipa3 ipa_button">
+                <div class="a31 ipa3 ipa_button" data-ipa-id="cheese">
                     <span class="ipa_char">t∫</span> <br>
                     <span class="ipa_example"><u>ch</u>eese</span>
                 </div>
-                <div class="a32 ipa3 ipa_button">
+                <div class="a32 ipa3 ipa_button" data-ipa-id="June">
                     <span class="ipa_char">dʒ</span> <br>
                     <span class="ipa_example"><u>J</u>une</span>
                 </div>
-                <div class="a33 ipa3 ipa_button">
+                <div class="a33 ipa3 ipa_button" data-ipa-id="car">
                     <span class="ipa_char">k</span> <br>
                     <span class="ipa_example"><u>c</u>ar</span>
                 </div>
-                <div class="a34 ipa3 ipa_button">
+                <div class="a34 ipa3 ipa_button" data-ipa-id="go">
                     <span class="ipa_char">g</span> <br>
                     <span class="ipa_example"><u>g</u>o</span>
                 </div>
-                <div class="a35 ipa3 ipa_button">
+                <div class="a35 ipa3 ipa_button" data-ipa-id="fly">
                     <span class="ipa_char">f</span> <br>
                     <span class="ipa_example"><u>f</u>ly</span>
                 </div>
-                <div class="a36 ipa3 ipa_button">
+                <div class="a36 ipa3 ipa_button" data-ipa-id="video">
                     <span class="ipa_char">v</span> <br>
                     <span class="ipa_example"><u>v</u>ideo</span>
                 </div>
-                <div class="a37 ipa3 ipa_button">
+                <div class="a37 ipa3 ipa_button" data-ipa-id="think">
                     <span class="ipa_char">ð</span> <br>
                     <span class="ipa_example"><u>th</u>ink</span>
                 </div>
-                <div class="a38 ipa3 ipa_button">
+                <div class="a38 ipa3 ipa_button" data-ipa-id="this">
                     <span class="ipa_char">θ</span> <br>
                     <span class="ipa_example"><u>th</u>is</span>
                 </div>
-                <div class="a39 ipa3 ipa_button">
+                <div class="a39 ipa3 ipa_button" data-ipa-id="see">
                     <span class="ipa_char">s</span> <br>
                     <span class="ipa_example"><u>s</u>ee</span>
                 </div>
-                <div class="a40 ipa3 ipa_button">
+                <div class="a40 ipa3 ipa_button" data-ipa-id="zoo">
                     <span class="ipa_char">z</span> <br>
                     <span class="ipa_example"><u>z</u>oo</span>
                 </div>
-                <div class="a41 ipa3 ipa_button">
+                <div class="a41 ipa3 ipa_button" data-ipa-id="shall">
                     <span class="ipa_char">∫</span> <br>
                     <span class="ipa_example"><u>sh</u>all</span>
                 </div>
-                <div class="a42 ipa3 ipa_button">
+                <div class="a42 ipa3 ipa_button" data-ipa-id="television">
                     <span class="ipa_char">ʒ</span> <br>
                     <span class="ipa_example">televi<u>s</u>ion</span>
                 </div>
-                <div class="a43 ipa3 ipa_button">
+                <div class="a43 ipa3 ipa_button" data-ipa-id="man">
                     <span class="ipa_char">m</span> <br>
                     <span class="ipa_example"><u>m</u>an</span>
                 </div>
-                <div class="a44 ipa3 ipa_button">
+                <div class="a44 ipa3 ipa_button" data-ipa-id="now">
                     <span class="ipa_char">n</span> <br>
                     <span class="ipa_example"><u>n</u>ow</span>
                 </div>
-                <div class="a45 ipa3 ipa_button">
+                <div class="a45 ipa3 ipa_button" data-ipa-id="sing">
                     <span class="ipa_char">ŋ</span> <br>
                     <span class="ipa_example">s<u>ing</u></span>
                 </div>
-                <div class="a46 ipa3 ipa_button">
+                <div class="a46 ipa3 ipa_button" data-ipa-id="hat">
                     <span class="ipa_char">h</span> <br>
                     <span class="ipa_example"><u>h</u>at</span>
                 </div>
-                <div class="a47 ipa3 ipa_button">
+                <div class="a47 ipa3 ipa_button" data-ipa-id="love">
                     <span class="ipa_char">l</span> <br>
                     <span class="ipa_example"><u>l</u>ove</span>
                 </div>
-                <div class="a48 ipa3 ipa_button">
+                <div class="a48 ipa3 ipa_button" data-ipa-id="red">
                     <span class="ipa_char">r</span> <br>
                     <span class="ipa_example"><u>r</u>ed</span>
                 </div>
-                <div class="a49 ipa3 ipa_button">
+                <div class="a49 ipa3 ipa_button" data-ipa-id="wet">
                     <span class="ipa_char">w</span> <br>
                     <span class="ipa_example"><u>w</u>et</span>
                 </div>
-                <div class="a50 ipa3 ipa_button">
+                <div class="a50 ipa3 ipa_button" data-ipa-id="yes">
                     <span class="ipa_char">j</span> <br>
                     <span class="ipa_example"><u>y</u>es</span>
                 </div>
@@ -474,5 +474,33 @@
         <div class="col-12 col-lg-3"></div>
     </div>
 </div>
+
+<script>
+    const ipa_buttons = document.getElementsByClassName('ipa_button');
+    for (let i = 0; i < ipa_buttons.length; i++) {
+        const ipa_button = ipa_buttons[i];
+        const ipa_id = ipa_button.getAttribute('data-ipa-id');
+        ipa_button.addEventListener('click', (ev) => {
+            playSound(ipa_id);
+            loadIpaDescription(ipa_id);
+        });
+    }
+
+    function playSound(ipa_id) {
+        const audio = new Audio(`sounds/${ipa_id}.mp3`);
+        audio.play();
+    }
+
+    function loadIpaDescription(ipa_id) {
+        const descElement = document.querySelector(`.ipa_description_detail[data-ipa-id=${ipa_id}]`);
+        const ipaDescriptionContainer = document.getElementById('ipa_description');
+        if (!descElement) {
+            ipaDescriptionContainer.innerHTML = '';
+        } else {
+            ipaDescriptionContainer.innerHTML = descElement.outerHTML;
+        }
+    }
+
+</script>
 </body>
 </html>

@@ -230,6 +230,23 @@
     border-radius: 2px;
     display: grid;
     grid-template-areas:
+                   ' a01 a01 a01 a01 a02 a02 a03 a04'
+                   ' a06 a07 a08 a09 a10 a11 a03 a04'
+                   ' a12 a13 a14 a15 a16 a17 a18 a04'
+                   ' a19 a20 a21 a22 a23 a24 a25 a04'
+                   ' a27 a28 a29 a30 a31 a32 a33 a34'
+                   ' a35 a36 a37 a38 a39 a40 a41 a42'
+                   ' a43 a44 a45 a46 a47 a48 a49 a50';
+    gap: 1px;
+    background-color: #868686;
+    padding: 1px;
+}
+
+@media (min-width: 768px) {
+    .grid-container {
+        border-radius: 2px;
+        display: grid;
+        grid-template-areas:
                    'a00 a01 a01 a01 a01 a02 a02 a03 a04'
                    'a05 a06 a07 a08 a09 a10 a11 a03 a04'
                    'a05 a12 a13 a14 a15 a16 a17 a18 a04'
@@ -237,15 +254,16 @@
                    'a26 a27 a28 a29 a30 a31 a32 a33 a34'
                    'a26 a35 a36 a37 a38 a39 a40 a41 a42'
                    'a26 a43 a44 a45 a46 a47 a48 a49 a50';
-    gap: 1px;
-    background-color: #868686;
-    padding: 1px;
+        gap: 1px;
+        background-color: #868686;
+        padding: 1px;
+    }
 }
+
 
 .grid-container > div {
     background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
-    padding: 5px 0;
 }
 
 .color1 {

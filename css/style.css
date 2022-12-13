@@ -202,6 +202,10 @@
     grid-area: a50
 }
 
+.a51 {
+    grid-area: a51
+}
+
 .ipa1 {
     background-color: #d9b41e !important;
 }
@@ -236,7 +240,8 @@
                    'a19 a20 a21 a22 a23 a24 a25 a04'
                    'a27 a28 a29 a30 a31 a32 a33 a34'
                    'a35 a36 a37 a38 a39 a40 a41 a42'
-                   'a43 a44 a45 a46 a47 a48 a49 a50';
+                   'a43 a44 a45 a46 a47 a48 a49 a50'
+                   'a51 a51 a51 a51 a51 a51 a51 a51';
     gap: 1px;
     background-color: #868686;
     padding: 1px;
@@ -254,6 +259,11 @@
 
 .color2 {
     background-color: #ffe8c6 !important;
+    font-size: 13px;
+}
+
+.color3 {
+    background-color: #fcabab !important;
     font-size: 13px;
 }
 
@@ -275,6 +285,7 @@
     height: 50vh;
     overflow-y: scroll;
 }
+
 #ipa_chart {
     height: 50vh;
 }
@@ -283,6 +294,8 @@
     font-size: 30px;
     font-weight: bold;
 }
+
+
 
 @media (min-width: 768px) {
     .grid-container {
@@ -311,12 +324,13 @@
     }
 
     .color1 {
-        background-color: #bfccff !important;
         font-size: 17px;
     }
 
     .color2 {
-        background-color: #ffe8c6 !important;
+        font-size: 17px;
+    }
+    .color3 {
         font-size: 17px;
     }
 }
